@@ -8,10 +8,16 @@ body {
     justify-content: center;
 
 }
+#name {
+
+    display: flex;
+    align-self: flex-end;
+    margin: 10px;
+}
 .body {
     /* position: absolute; */
     display: flex;
-    background: grey;
+    /* background: grey; */
     /* text-align: center; */
     /* justify-content: center; */
     align-items: center;
@@ -33,14 +39,50 @@ body {
     background: blueviolet;
     /* flex: auto; */
     display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    /* width: 500px;
+    height: 300px; */
+    width: 600px;
+    height: 350px;
+    justify-content: center;
+    margin-bottom: 10px;;
+    overflow: scroll;
+}
+embed {
+    display: flex;
+    /* width: 500px; */
+    height: 700px;
+}
+#button1 {
+    display: flex;
+    background: grey;
+    flex-direction:column;
     align-items: center;
+    align-self: center;
+}
+#button2 {
+    display: flex;
+    background: grey;
     flex-direction: column;
-    width: 500px;
-    height: 300px;
-
+    align-items: center;
+    align-self: center;
+}
+#middle {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 #Hello {
+    display: flex;
+    flex-direction: column;
     font-size: 75px;
+    margin-bottom: 5px;
+}
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    font-size: 55px;
     margin-bottom: 5px;
 }
 #social {
@@ -53,31 +95,65 @@ body {
 }
 #links-flex {
     background: rgb(77, 181, 130);
-    width: 500px;
+    width: 600px;
     display: flex;
     align-content: space-around;
     justify-content: space-around;
 }
-/* #header {
-    display: flex;
-    background: aqua;
-    width: 500px;
-    align-content: center;
-    justify-content: space-around;
-} */
-/* #fixed-header {
-    display: flex;
-    position: top;
-    text-align: center;
-    width: 100%;  
-    background: #333;
-    padding: 10px 0;
-    color: #fff;
-    flex-direction: column;
-} */
-
 a {
     color: black;
     text-decoration: none;
 }
 
+/* ==========================================Social Icons======================================================= */
+
+.fa {
+    /* padding: 10px; */
+    font-size: 30px;
+    /* width: 50px; */
+    /* text-align: center;
+    text-decoration: none; */
+    margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.2;
+    box-shadow: 10px 10px rgb(174, 166, 166)
+}
+/* .fa-github {
+    color: white;
+}
+.fa-linkedin {    
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+.fa-reddit {
+    color: white;
+}
+.fa-google {
+    color: white;
+} */
+button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 18px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    transition: transform 200ms,background 200ms;
+    background: transparent;
+    color: #000000;
+    box-shadow: 0 0 0 3px #000000 inset;
+    
+}
+
+button:hover{
+    transform: translateY(-2px);
+}  

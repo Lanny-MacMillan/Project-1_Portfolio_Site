@@ -1,0 +1,101 @@
+* {
+    max-height: 700px;
+    max-width: 700px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    font-size: 75px;
+}
+.flex-body {
+    display: flex;
+    
+}
+/* div {
+    border-radius: 5px;
+} */
+
+/* #header {
+    height: 40px;
+    width: 100%;
+    background-color: #534c4c;
+    position: sticky;
+    z-index: 1;
+  } */
+  
+  #title {
+    margin-left: 3%;
+  }
+  
+  #footer {
+    height: 50px;
+    width: 100%;
+    background-color: #534c4c;
+    clear: both;
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+  }
+  /* embed {
+      width: 500px;
+      height: 700px;
+  } */
+  /* .left {
+    height: 700px;
+    width: 45px;
+    background-color: #80c4e1;
+    float: left;
+  }
+  
+  .right {
+    height: 700px;
+    width: 45px;
+    background-color: #80c4e1;
+    float: right;
+  } */
+  
+  .stuff {
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 55px;
+    width: 75%;
+    height: 1000px;
+}
+
+p,
+li {
+    font-family: 'Cormorant Garamond';
+}
+
+.head {
+    font-size: 20px;
+}
+
+#name {
+    font-family: Sacramento;
+    float: right;
+    margin-top: 10px;
+    margin-right: 4%;
+}
+
+/* =============================================================================== */
+
+/* @media only screen and (max-width: 430px) {
+    .left,
+    .right {
+      display: none;
+    }
+    .stuff {
+      width: 100%;
+      margin-left: 10px;
+    }
+  } */
+
+
+
+
+
+  
+  
+
+
