@@ -45,10 +45,9 @@ body {
     width: 600px;
     height: 350px;
     /* justify-content: center; */
-    margin-bottom: 10px;;
-    overflow: scroll;
-    /* padding-bottom: 0;
-    padding-right: 0; */
+    /* margin-bottom: 10px;; */
+    /* overflow: scroll;  */
+    /* padding: 0%; */
 }
 embed {
     display: flex;
@@ -95,7 +94,7 @@ embed {
     align-items: center;
 }
 #links-flex {
-    background: rgb(77, 181, 130);
+    /* background: rgb(77, 181, 130); */
     width: 600px;
     display: flex;
     align-content: space-around;
