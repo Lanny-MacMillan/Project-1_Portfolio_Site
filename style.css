@@ -39,15 +39,16 @@ body {
     background: blueviolet;
     /* flex: auto; */
     display: flex;
+    flex: auto;
     /* align-items: center; */
     flex-direction: row;
-    /* width: 500px;
-    height: 300px; */
     width: 600px;
     height: 350px;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 10px;;
     overflow: scroll;
+    /* padding-bottom: 0;
+    padding-right: 0; */
 }
 embed {
     display: flex;
@@ -142,18 +143,22 @@ button {
     outline: 0;
     border: 0;
     cursor: pointer;
-    border-radius: 8px;
-    padding: 10px 18px 10px;
+    border-radius: 12px;
+    /* padding: 10px 18px 10px; */
+    padding: 8px 16px 8px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
-    transition: transform 200ms,background 200ms;
+    /* transition: transform 200ms, background 200ms; */
     background: transparent;
     color: #000000;
-    box-shadow: 0 0 0 3px #000000 inset;
+    box-shadow: 1px 0px 5px 2px #000000 inset;
     
 }
 
 button:hover{
+    opacity: 0.5;
     transform: translateY(-2px);
 }  
+
+/* space battle 339x190 */
