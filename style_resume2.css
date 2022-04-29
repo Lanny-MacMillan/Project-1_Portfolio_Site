@@ -79,24 +79,41 @@ p, h2, ul, li {
     margin-right: 4%;
 }
 
-/* =============================================================================== */
-
-/* @media only screen and (max-width: 430px) {
-    .left,
-    .right {
-      display: none;
+/* ============================= MEDIA QUERIES ================================== */
+ /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        display: flex;
+        justify-content: center;
+        text-align:left;
+        align-items: left;
+        width: 60%;
+    }
+    #name {
+        font-size: 25px;
     }
     .stuff {
-      width: 100%;
-      margin-left: 10px;
+        display: inline-block;
+        margin-top: 6px;
+        margin-left: 5px;
+        width: 75%;
+        height: 950px;
+
     }
-  } */
-
-
-
-
-
-  
-  
+    h1 {
+        font-size: 35px;
+        text-align: center;
+        align-items: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    #header {
+        display: none;
+    }
+    #footer {
+        display: none;
+    }
+}
 
 

@@ -1,5 +1,4 @@
 $(()=>{
-
 const home = () => {
     window.location.href = 'index.html';
 }
@@ -12,10 +11,53 @@ const resume = () => {
 const projects = () => {
     window.location.href = 'projects.html';
 }
+// $backgrounds = array(
+    'images/landscape.png',
+    'images/mountain.jpeg',
+    'images/sunset.jpeg',
+    'images/sunset2.jpeg',
+    'images/tree.jpeg',
+    // );
+
+
+
+
+
+// (function(){
+
+//     var body=document.getElementsByTagName("body");
+ 
+//     if (body[0].getAttribute("id")=="collection-54d11b07e4b0a33bbb20a490") {
+//       var images = [
+//       "http://www.mediafactory.org.au/alexandra-race-lyons/files/2014/07/creative-commons-2-1ef4xzl.png",
+//       "http://www.mediafactory.org.au/alexandra-race-lyons/files/2014/07/creative-commons-2-1ef4xzl.png", 
+//       "http://www.mediafactory.org.au/alexandra-race-lyons/files/2014/07/creative-commons-2-1ef4xzl.png"
+//       ];
+ 
+//       var imgCount = images.length;
+ 
+//       var randNumber=Math.floor((Math.random() * imgCount) + 1);
+ 
+//       imgURL = images[randNumber-1];
+ 
+//       var image=document.getElementsByClassName("thumb-image loaded");
+//       image[0].setAttribute("src", imgURL);
+//       image[0].setAttribute("data-image", imgURL);
+//       image[0].setAttribute("data-src", imgURL);
+//       image[0].style.visibility="visible";
+//     }
+ 
+//   }());
+//change bakground image based on cookie visit count
+
+
+$("#background").css("background-image","url(img_url_here)");
+
+
+
 
 // mouseover projects link and change text to interactive back to projects
 var btn = document.querySelector(".projects");
-
 btn.addEventListener("mouseover", function() {
     this.textContent = "Interactive!";
 })
@@ -72,3 +114,37 @@ btn.addEventListener("mouseout", function() {
 //     $('#lower').append($br)
 
 // }
+
+
+//========================= Change background image based on cookie visits ===================================
+
+
+// var name = "visitCount" + "=";
+// var ca = document.cookie.split(';');
+// var cookieContent;
+// for(var i=0; i<ca.length; i++) {
+//     var c = ca[i];
+//     while (c.charAt(0)==' ') c = c.substring(1);
+//     if (c.indexOf(name) == 0) { 
+//         cookieContent = c.substring(name.length,c.length);
+//     } else {
+//         cookieContent = "";
+//     }
+// }
+
+// if(cookieContent != "") {
+//     if(cookieContent == "1") {
+//         document.body.style.backgroundColor = "yellow";
+//         document.cookie= "visitCount=2";
+//     } else if(cookieContent == "2") {
+//         document.body.style.backgroundColor = "red";
+//         document.cookie= "visitCount=3";
+//     }
+// } else {
+//     //first visit
+//     document.body.style.backgroundColor = "black";
+//     document.cookie= "visitCount=1";
+// }
+
+
+//==========================================================================================================

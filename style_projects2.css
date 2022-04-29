@@ -101,3 +101,65 @@ button:hover {
     75% {transform: rotate(-5deg);}
     100% {transform: rotate(0deg);}
 }
+
+/* ============================= MEDIA QUERIES ================================== */
+
+
+ /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 75%;
+    }
+    #Hello {
+        font-size: 35px;
+    }
+    .body {
+        align-items: center;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h4 {
+        align-items: center;
+        text-align: center;
+        font-size: 13px;
+    }
+    #sb {
+        display: none;
+    }
+    #RPS {
+        display: none;
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+    body {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    #Hello {
+        font-size: 35px;
+    }
+    .body {
+        align-items: center;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h4 {
+        align-items: center;
+        text-align: center;
+        font-size: 13px;
+    }
+    #sb {
+        display: none;
+    }
+    #RPS {
+        display: none;
+    }
+}

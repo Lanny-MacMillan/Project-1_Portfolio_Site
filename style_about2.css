@@ -21,3 +21,37 @@ h5 {
     font-family: 'Luckiest Guy', cursive;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
 }
+
+
+/* ============================= MEDIA QUERIES ================================== */
+ /* Smartphones (portrait and landscape) ----------- */
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        display: flex;
+        justify-content: center;
+        text-align:left;
+        align-items: left;
+        width: 75%;
+    }
+    #aboutMe {
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+    }
+    #name {
+        font-size: 25px;
+    }
+    .stuff {
+        display: inline-block;
+        margin-top: 6px;
+        margin-left: 5px;
+        width: 75%;
+        height: 950px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        text-align: center;
+    }
+}
