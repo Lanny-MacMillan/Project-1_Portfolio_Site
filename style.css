@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+
 body {
     padding-top: 40px; 
     padding-bottom: 40px;
@@ -6,7 +10,14 @@ body {
     background: rgb(223, 198, 198);
     text-align: center;
     justify-content: center;
-
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://i.imgur.com/VOgGD0x.jpg);
+    /* Great for centering an image in background on multiple browsers */
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
 }
 #name {
 
@@ -25,7 +36,7 @@ body {
     height: 100%;
 }
 .main {
-    background: aqua;
+    /* background: aqua; */
     /* flex: auto; */
     display: flex;
     width: 800px;
@@ -33,10 +44,12 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
+    -moz-box-shadow: 0px 8px 8px #000; 
+    -webkit-box-shadow: 0px 8px 8px #000;
+    box-shadow: 0px 8px 8px #000;
 }
 #lower {
-    background: blueviolet;
+    /* background: blueviolet; */
     /* flex: auto; */
     display: flex;
     flex: auto;
@@ -44,8 +57,12 @@ body {
     flex-direction: row;
     width: 600px;
     height: 350px;
+    -moz-box-shadow: 0px 8px 8px #000; 
+    -webkit-box-shadow: 0px 8px 8px #000;
+    box-shadow: 0px 8px 8px #000;
+    overflow: overlay;
     /* justify-content: center; */
-    /* margin-bottom: 10px;; */
+    /* margin-bottom: 10px; */
     /* overflow: scroll;  */
     /* padding: 0%; */
 }
@@ -78,6 +95,8 @@ embed {
     flex-direction: column;
     font-size: 75px;
     margin-bottom: 5px;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
 }
 #aboutMe {
     display: flex;
@@ -98,7 +117,34 @@ embed {
     width: 600px;
     display: flex;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-around;   
+}
+
+.bouncy{
+    animation:bouncy 4s infinite linear;
+    position:relative;
+}
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+
+h2 {
+    padding: 5px;
+    font-family: 'Arizonia', cursive;
+    color: #000000;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+    font-size: 35px;
+    font-weight: bolder;
+}
+h4 { 
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight:bolder
 }
 a {
     color: black;
@@ -116,27 +162,69 @@ a {
     margin: 5px 2px;
 }
 .fa:hover {
-    opacity: 0.2;
-    box-shadow: 10px 10px rgb(174, 166, 166)
+    opacity: 0.5;
+    transform: translateY(-2px);
 }
-/* .fa-github {
-    color: white;
+ .fa-github:hover {
+    color: rgb(190, 183, 183);
 }
-.fa-linkedin {    
-    color: white;
+.fa-linkedin:hover {    
+    animation: color-shift2 .7s infinite;
 }
-.fa-facebook {
-    color: white;
+@keyframes color-shift2 {
+    0% {
+        color: blue;    }
+    33% {
+        color: blue;    }
+    66% {
+        color: white;
+    }
+    100% {
+        color: white;
+    }
 }
-.fa-instagram {
-    color: white;
+.fa-facebook:hover {
+    color: blue;
 }
-.fa-reddit {
-    color: white;
+.fa-instagram:hover {
+    animation: color-shift3 .7s infinite;
 }
-.fa-google {
-    color: white;
-} */
+@keyframes color-shift3 {
+    0% {
+        color: rgb(147, 12, 250);
+    }
+    33% {
+        color: rgb(208, 61, 3);
+    }
+    66% {
+        color: rgb(255, 217, 0);
+    }
+    100% {
+        color: #ed5cd8;
+    }
+}
+.fa-reddit:hover {
+    color: red;
+}
+.fa-google:hover {
+    animation: color-shift .7s infinite;
+}
+
+@keyframes color-shift {
+    0% {
+        color: red;
+    }
+    33% {
+        color: rgb(208, 208, 3);
+    }
+    66% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
+}
+
 button {
     display: inline-block;
     outline: 0;
@@ -152,12 +240,14 @@ button {
     background: transparent;
     color: #000000;
     box-shadow: 1px 0px 5px 2px #000000 inset;
-    
+    /* opacity: 0.6;
+    background: rgb(236, 202, 221); */
 }
 
 button:hover{
     opacity: 0.5;
     transform: translateY(-2px);
+    
 }  
 
 /* space battle 339x190 */

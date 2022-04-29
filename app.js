@@ -1,11 +1,5 @@
 $(()=>{
 
-const spaceBattle = () => {
-    window.open('https://fanciful-caramel-fdd279.netlify.app/', "_blank");
-}
-const RockPaperScissors = () => {
-    window.open('https://comforting-pithivier-c81117.netlify.app/', "_blank");
-}
 const home = () => {
     window.location.href = 'index.html';
 }
@@ -19,11 +13,18 @@ const projects = () => {
     window.location.href = 'projects.html';
 }
 
+// mouseover projects link and change text to interactive back to projects
+var btn = document.querySelector(".projects");
+
+btn.addEventListener("mouseover", function() {
+    this.textContent = "Interactive!";
+})
+btn.addEventListener("mouseout", function() {
+    this.textContent = "Projects";
+})
 
 // ============================================    Event Listeners   =============================================
 
-    $('#sb').on('click', spaceBattle);
-    $('#rps').on('click', RockPaperScissors);
     $('#1').on('click', home);
     $('#2').on('click', about);
     $('#3').on('click', resume);
