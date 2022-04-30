@@ -1,10 +1,10 @@
 $(()=>{
 
 const spaceBattle = () => {
-    window.open('https://fanciful-caramel-fdd279.netlify.app/', "_blank");
+    window.open('https://reliable-granita-1b6bf9.netlify.app', "_blank");
 }
 const RockPaperScissors = () => {
-    window.open('https://charming-starlight-9ca493.netlify.app', "_blank");
+    window.open('https://shiny-haupia-56f81e.netlify.app', "_blank");
 }
 
 

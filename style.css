@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
-/* images {
-    background-image: url(https://i.imgur.com/VOgGD0x.jpg);
-} */
 body {
     padding-top: 40px; 
     padding-bottom: 40px;
@@ -14,12 +11,9 @@ body {
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(https://i.imgur.com/VOgGD0x.jpg);
-    /* Great for centering an image in background on multiple browsers */
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
+    /* background-image: url(https://i.imgur.com/VOgGD0x.jpg); */
+    /* background-image: url(https://i.imgur.com/VOgGD0x.jpg); */
+    /* background-image: image-set('/images/landscape.png', '/images/mountain.png', '/images/sunset.png', '/images/sunset2.png', '/images/tree.png'); */
 }
 #name {
 
@@ -265,6 +259,10 @@ button:hover{
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    
     }
     .body {
         flex-direction: column;
@@ -282,6 +280,15 @@ button:hover{
         height: 1em;
         width: 100%;
         align-content: space-around;
+    }
+    .bouncy{
+        animation:bouncy 4s infinite linear;
+        position:relative;
+        font-size: 10px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 14px;
+        padding-left: 14px;
     }
     #links-flex {
         /* background: rgb(77, 181, 130); */
@@ -294,6 +301,7 @@ button:hover{
         font-size: 25px;;
     }
 }
+
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
     .main {
         display: flex;
@@ -302,6 +310,9 @@ button:hover{
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
     .body {
         flex-direction: column;
@@ -319,6 +330,11 @@ button:hover{
         height: 1em;
         width: 100%;
         align-content: space-around;
+    }
+    .bouncy{
+        animation:bouncy 4s infinite linear;
+        position:relative;
+        font-size: 12px;
     }
     #links-flex {
         width: 80%;
