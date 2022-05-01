@@ -57,14 +57,11 @@ button {
     margin: 5px;
     cursor: pointer;
     border-radius: 12px;
-    /* padding: 10px 18px 10px; */
     padding: 8px 16px 8px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
-    /* transition: transform 200ms, background 200ms; */
-    /* background: transparent; */
-    background: grey;
+    background: none;
     color: #000000;
     box-shadow: 1px 0px 5px 2px #000000 inset;
 }
@@ -113,7 +110,7 @@ button:hover {
         justify-content: center;
         text-align: center;
         align-items: center;
-        width: 90%;
+        width: 70%;
     }
     #Hello {
         font-size: 35px;
@@ -131,7 +128,7 @@ button:hover {
     }
     img {
         width: 100%;
-        max-width: 400px;
+        max-width: 320px;
     }
     button {
         padding: 6px 14px 6px;

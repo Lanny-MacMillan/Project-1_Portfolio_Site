@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     /* background-image: url(https://i.imgur.com/VOgGD0x.jpg); */
-    /* background-image: url(https://i.imgur.com/VOgGD0x.jpg); */
+    background-image: url(https://i.imgur.com/VOgGD0x.jpg);
     /* background-image: image-set('/images/landscape.png', '/images/mountain.png', '/images/sunset.png', '/images/sunset2.png', '/images/tree.png'); */
 }
 #name {
@@ -149,7 +149,11 @@ a {
     color: black;
     text-decoration: none;
 }
-
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
 /* ==========================================Social Icons======================================================= */
 
 .fa {
@@ -274,6 +278,7 @@ button:hover{
         width: 80%;
         height: 350px;
     }
+
     #social {
         display: flex;
         flex-direction: row;

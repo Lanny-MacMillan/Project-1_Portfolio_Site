@@ -16,6 +16,8 @@ randomBackground = () => {
 // randomBackground()
 const home = () => {
 window.location.href = 'index.html';
+
+
 }
 const about = () => {
     window.location.href = 'about.html';
@@ -26,7 +28,9 @@ const resume = () => {
 const projects = () => {
     window.location.href = 'projects.html';
 }
-
+const contact = () => {
+    window.location.href = 'contact.html';
+}
 
 
 // mouseover projects link and change text to interactive back to projects
@@ -41,10 +45,11 @@ btn.addEventListener("mouseout", function() {
 // ============================================    Event Listeners   =============================================
 
     $('#1').on('click', home);
-    $('#1').on('click', randomBackground());
+    // $('#1').on('click', randomBackground());
     $('#2').on('click', about);
     $('#3').on('click', resume);
     $('#4').on('click', projects);
+    $('#5').on('click', contact);
 
 
 });
