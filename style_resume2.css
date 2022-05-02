@@ -13,7 +13,7 @@ h1 {
 }
 .flex-body {
     display: flex;
-  }
+}
 /* div {
     border-radius: 5px;
 } */
@@ -22,9 +22,9 @@ h1 {
     height: 40px;
     width: 100%;
     background-color: #303955;
-  }
+}
     
-  #footer {
+#footer {
     height: 50px;
     width: 100%;
     background-color: #303955;
@@ -32,8 +32,8 @@ h1 {
     position: relative;
     display: flex;
     align-self: flex-end;
-  }
-  .stuff {
+}
+.stuff {
     display: inline-block;
     margin-top: 6px;
     margin-left: 55px;
