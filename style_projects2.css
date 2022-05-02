@@ -68,7 +68,7 @@ button {
 
 button:hover {
     opacity: 0.5;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     -webkit-animation-name: wiggle;
     -ms-animation-name: wiggle;
     -ms-animation-duration: 800ms;

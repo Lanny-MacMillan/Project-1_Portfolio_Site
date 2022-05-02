@@ -21,6 +21,14 @@ h5 {
     font-family: 'Luckiest Guy', cursive;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
 }
+#aboutImg {
+    display: flex;
+    justify-content: center;
+}
+/* img {
+    width: 100%;
+    max-width: 200px;
+} */
 
 
 /* ============================= MEDIA QUERIES ================================== */
