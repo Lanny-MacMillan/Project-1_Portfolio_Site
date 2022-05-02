@@ -1,6 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+.contact {
+    margin: 30px;
+    justify-content: center;
+    align-self: center;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+#send {
+  color: white;
+  box-shadow: 1px 0px 5px 2px #d17f7f inset;
+}
+#close {
+    color: white;
+    box-shadow: 1px 0px 5px 2px #d17f7f inset;}
+#modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+#modal-textbox {
+    background-image: url(https://i.imgur.com/4Q5mMRb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+	height: 350px;
+	width: 350px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+#modal-footer {
+	text-align: left;
+    padding: 30px;
+}
+
+
+
+
 body {
     padding-top: 40px; 
     padding-bottom: 40px;
@@ -15,10 +61,9 @@ body {
     background-image: url(https://i.imgur.com/VOgGD0x.jpg);
     /* background-image: image-set('/images/landscape.png', '/images/mountain.png', '/images/sunset.png', '/images/sunset2.png', '/images/tree.png'); */
 }
-#name {
-
+.name {
     display: flex;
-    align-self: flex-end;
+    /* align-self: flex-end; */
     margin: 10px;
 }
 .body {
@@ -140,6 +185,7 @@ h2 {
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
     font-size: 35px;
     font-weight: bolder;
+    margin-bottom: 5px;;
 }
 h4 { 
     font-family: 'Chakra Petch', sans-serif;
@@ -229,24 +275,19 @@ a {
 }
 
 button {
-    display: inline-block;
-    outline: 0;
-    border: 0;
-    cursor: pointer;
-    border-radius: 12px;
-    /* padding: 10px 18px 10px; */
-    padding: 8px 16px 8px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
-    /* transition: transform 200ms, background 200ms; */
-    background: transparent;
+    box-shadow: 0px 0px 10px 1px #276873;
+	background-color:transparent;
+	border-radius:12px;
+	display:inline-block;
+	cursor:pointer;
     color: #000000;
-    box-shadow: 1px 0px 5px 2px #000000 inset;
-    /* opacity: 0.6;
-    background: rgb(236, 202, 221); */
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	font-style:italic;
+	padding:6px 14px;
+	text-shadow:0px 1px 0px #3d768a;
 }
-
 button:hover{
     opacity: 0.5;
     transform: translateY(-2px);
@@ -256,6 +297,31 @@ button:hover{
 
     /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .contact {
+        font-size: 11px;
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+    #send {
+        font-size: 12px;
+    }
+    #close {
+        font-size: 12px;
+    }
+    #modal-textbox {
+        background-image: url(https://i.imgur.com/4Q5mMRb.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+        height: 350px;
+        width: 70%;
+        border-radius: 2px;
+        margin: 150px auto;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+        padding: 2%;
+        line-height: 120%;
+        font-size: 12px;
+    }
     .main {
         display: flex;
         width: 100%;
@@ -308,6 +374,29 @@ button:hover{
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+    .contact {
+        font-size: 12px;
+    }
+    #send {
+        font-size: 12px;
+    }
+    #close {
+        font-size: 12px;
+    }
+    #modal-textbox {
+        background-image: url(https://i.imgur.com/4Q5mMRb.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+        height: 350px;
+        width: 70%;
+        border-radius: 2px;
+        margin: 150px auto;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+        padding: 2%;
+        line-height: 120%;
+        font-size: 14px;
+    }
     .main {
         display: flex;
         width: 500px;

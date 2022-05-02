@@ -1,4 +1,14 @@
 $(()=>{
+//======================================= MODAL ==================================================
+const $modal = $('#modal')
+const $closeBtn = $('#close')    
+const openModal = () => {
+    $modal.css('display', 'block')
+}
+const closeModal = () => {
+    $modal.css('display', 'none')
+}
+
 let backgroundArray = []
 //Storing these urls didnt seem to work, but pushing them into the array did
 backgroundArray.push('https://i.imgur.com/VOgGD0x.jpg')
@@ -49,8 +59,8 @@ btn.addEventListener("mouseout", function() {
     $('#2').on('click', about);
     $('#3').on('click', resume);
     $('#4').on('click', projects);
-    $('#5').on('click', contact);
-
+    $('#5').on('click', openModal);
+    $closeBtn.on('click', closeModal)
 
 });
 
