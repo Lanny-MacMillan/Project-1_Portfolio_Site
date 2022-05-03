@@ -16,4 +16,4 @@
 # 2) Add a photo carosel to the About Me section
 # 3) Set up a php contact form
 # 4) Have scroll bars transparent, they dont show up on mobile but do in my browser window.
-# 5) Chnage center DIV box to inline block instead of FLEX, it changes size slightly to make room for content, not visible on PC but can be seen on mobile
+# 5) Chnage center DIV box to inline block instead of FLEX, it changes size slightly to make room for content, not visible on PC but can be seen on mobile.
