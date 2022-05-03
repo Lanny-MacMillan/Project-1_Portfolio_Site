@@ -8,42 +8,6 @@
     margin: 0px;
     margin-bottom: 10px;
 }
-#send {
-    color: white;
-    box-shadow: 1px 0px 5px 2px #d17f7f inset;
-}
-#close {
-    color: white;
-    box-shadow: 1px 0px 5px 2px #d17f7f inset;}
-#modal {
-	background-color: rgba(0,0,0,0.4);
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
-	overflow: auto;
-	display: none;
-}
-#modal-textbox {
-    background-image: url(https://i.imgur.com/4Q5mMRb.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
-	height: 350px;
-	width: 350px;
-	border-radius: 2px;
-	margin: 150px auto;
-	box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-	padding: 2%;
-	line-height: 120%;
-}
-#modal-footer {
-	text-align: left;
-    padding: 30px;
-}
-
 body {
     padding-top: 40px; 
     padding-bottom: 40px;
@@ -92,20 +56,6 @@ embed {
     width: 100%;
     height: 700px;
 }
-#button1 {
-    display: flex;
-    background: grey;
-    flex-direction:column;
-    align-items: center;
-    align-self: center;
-}
-#button2 {
-    display: flex;
-    background: grey;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-}
 #middle {
     display: flex;
     flex-direction: column;
@@ -143,25 +93,10 @@ embed {
 
 }
 #links-flex {
-    /* background: rgb(77, 181, 130); */
     width: 600px;
     display: flex;
     align-content: space-around;
     justify-content: space-around;   
-}
-
-.bouncy{
-    animation:bouncy 4s infinite linear;
-    position:relative;
-}
-@keyframes bouncy {
-    0%{top:0em}
-    40%{top:0em}
-    43%{top:-0.9em}
-    46%{top:0em}
-    48%{top:-0.4em}
-    50%{top:0em}
-    100%{top:0em;}
 }
 
 h2 {
@@ -190,6 +125,9 @@ a {
     display: flex;
     flex-direction: row;
 }
+
+/* ================================= Buttons ======================================== */
+
 button {
     box-shadow: 0px 0px 10px 1px #276873;
 	background-color:transparent;
@@ -209,8 +147,76 @@ button:hover{
     transform: translateY(-2px);
     
 }  
+#button1 {
+    display: flex;
+    background: grey;
+    flex-direction:column;
+    align-items: center;
+    align-self: center;
+}
+#button2 {
+    display: flex;
+    background: grey;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
 
-/* ==========================================Social Icons===================================================== */
+/* ================================ Modal  ====================================== */
+
+#modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+#modal-textbox {
+    background-image: url(https://i.imgur.com/4Q5mMRb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+	height: 350px;
+	width: 350px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+#modal-footer {
+	text-align: left;
+    padding: 30px;
+}
+#send {
+    color: white;
+    box-shadow: 1px 0px 5px 2px #d17f7f inset;
+}
+#close {
+    color: white;
+    box-shadow: 1px 0px 5px 2px #d17f7f inset;}
+
+/* ============================= Bouncy Animation ================================== */
+
+.bouncy{
+    animation:bouncy 4s infinite linear;
+    position:relative;
+}
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+
+/* =============================== Social Icons ===================================== */
 
 .fa {
     font-size: 30px;
