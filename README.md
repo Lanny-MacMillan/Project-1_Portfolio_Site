@@ -9,6 +9,7 @@
 # Contact button opens a modal window with a MAILTO: form, its not what I would like to do but I wasnt sure if using prewritten forms for php contact was allowed.
 # Resume and Projects pages are embedded within the center DIVs. I thought this may be best for easily updating my Resume or Projects page. Both arent fixed to this website and can be used for other purposes, like updating or emailing my resume or project pages by them selves.
 
+# Media Queries - I have everything scale down for media sizes along with a few other changes. With 481-767px the social icons are moved to the top of the page instead of left side and the second div window disappears as its not needed to style and fill the page. WIth 320-480px the buttons and font sizes are scaled back even more to have all the content fit on the page.
 
 # Unsolved or Future to do:
 
